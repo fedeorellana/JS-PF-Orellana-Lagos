@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    padding-top: 60px;
+    background-color: cyan;
+}
+
+/* Estilo para el encabezado (título) */
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin-top: 4%;
+}
+
+.bienvenidos{
+margin-top: 20% ;
+}
+.fondo{
+    margin-top: 20%;
+}
+/* Estilo para la lista de productos */
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo para cada producto */
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 250px; /* Ancho fijo de cada producto */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Estilo para las descripciones ocultas */
+.descripcion {
+    display: none;
+    text-align: center;
+}
+
+/*Estilo barra de navegacion*/
+header nav {
+    background-color: #000; /* Color de fondo de la barra */
+    padding: 10px 0; /* Espaciado interior superior e inferior */
+    text-align: center; /* Centrar el texto horizontalmente */
+    position: fixed; /* Fijar la barra en la parte superior */
+    top: 0; /* Colocarla en la parte superior */
+    width: 100%; /* Ancho completo de la pantalla */
+    
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+}
+
+/* Estilo para cada elemento de la lista */
+header nav ul li {
+    margin-right: 10px; /* Espacio entre los elementos */
+}
+
+/* Estilo para los enlaces (botones) */
+header nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px; 
+    background-color:green; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: 1px solid #0074d9; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease-in-out; 
+}
+
+/* Cambia el color de fondo cuando se pasa el mouse sobre el botón */
+header nav ul li a:hover {
+    background-color:darkgreen;
+}
+#total-a-pagar {
+    background-color: green;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: -8px;
+    margin-left: 300px; /* Espacio entre el botón y los enlaces */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-top: 20px; /* Agrega espacio en la parte superior */
+}
+
+
+#comprar-btn, #cancelar-btn {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block; /* Los convierte en elementos bloque para que estén uno debajo del otro */
+}
+/* Estilo para la ventana modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 100%; /* Coloca la ventana modal debajo del botón Total a Pagar */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    overflow: auto;
+}
+
+.modal-contenido {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los botones en la ventana modal */
+.modal-contenido button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

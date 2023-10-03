@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos de Computación</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Vincula el archivo CSS -->
+    <script src="../index.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#placas">Placas de Video</a></li>
+                <li><a href="#mother">Mother</a></li>
+                <li><a href="#ram">Ram</a></li>
+                <li><a href="#almacenamiento">Almacenamiento</a></li>
+                <li><a href="#gabinete">Gabinete</a></li>
+                <li><p id="total-a-pagar">Total a pagar:$0</p></li>
+                <li><button id="cancelar-btn">Cancelar</button></li>
+                <li> <button id="comprar-btn">Comprar</button></li>
+        </nav>
+    </header>
+    <main>
+        <h1>PLACAS DE VIDEO</h1>
+        <div class="lista-productos">
+            <!-- Producto 1 -->
+
+            <div class="producto" onclick="mostrarOcultar('descripcion1', 'comprar1', 'agregar1')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Nvidia 1660">
+                <p class="descripcion" id="descripcion1" style="display: none">Precio: $150.000</p>
+                <button class="comprar" id="comprar1" style="display: none"
+                    onclick="comprarProducto('producto1')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar1" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 1660', 150000)">Agregar al carrito</button>
+
+                <h2>Nvidia 1660</h2>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto" onclick="mostrarOcultar('descripcion2', 'comprar2', 'agregar2')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 2">
+                <p class="descripcion" id="descripcion2" style="display: none">Precio: $200.000</p>
+                <button class="comprar" id="comprar2" style="display: none"
+                    onclick="comprarProducto('producto2')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar2" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 1070', 200000)">Agregar al carrito</button>
+                <h2>Nvidia 1070</h2>
+            </div>
+            <!-- Producto 3 -->
+            <div class="producto" onclick="mostrarOcultar('descripcion3', 'comprar3', 'agregar3')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 3">
+                <p class="descripcion" id="descripcion3" style="display: none">Precio: $250.000</p>
+                <button class="comprar" id="comprar3" style="display: none"
+                    onclick="comprarProducto('producto3')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar3" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 1080', 250000)">Agregar al carrito</button>
+                <h2>Nvidia 1080</h2>
+            </div>
+            <!--Producto 4-->
+            <div class="producto" onclick="mostrarOcultar('descripcion4', 'comprar4', 'agregar4')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 1">
+                <p class="descripcion" id="descripcion4" style="display: none">Precio: $300.000</p>
+                <button class="comprar" id="comprar4" style="display: none"
+                    onclick="comprarProducto('producto4')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar4" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2060', 300000)">Agregar al carrito</button>
+                <h2>Nvidia 2060</h2>
+            </div>
+            <!--Producto 5-->
+            <div class="producto" onclick="mostrarOcultar('descripcion5', 'comprar5', 'agregar5')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 5">
+                <p class="descripcion" id="descripcion5" style="display: none">Precio: $350.000</p>
+                <button class="comprar" id="comprar5" style="display: none"
+                    onclick="comprarProducto('producto5')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar5" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2060 super', 3500000)">Agregar al carrito</button>
+                <h2>Nvidia 2060 Super</h2>
+            </div>
+            <!--Producto 6-->
+            <div class="producto" onclick="mostrarOcultar('descripcion6', 'comprar6', 'agregar6')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 6">
+                <p class="descripcion" id="descripcion6" style="display: none">Precio: $400.000</p>
+                <button class="comprar" id="comprar6" style="display: none"
+                    onclick="comprarProducto('producto6')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar6" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2070', 400000)">Agregar al carrito</button>
+                <h2>Nvidia 2070</h2>
+            </div>
+            <!--Producto 7-->
+            <div class="producto" onclick="mostrarOcultar('descripcion7', 'comprar7', 'agregar7')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 7">
+                <p class="descripcion" id="descripcion7" style="display: none">Precio: $450.000</p>
+                <button class="comprar" id="comprar7" style="display: none"
+                    onclick="comprarProducto('producto7')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar7" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2070 super', 450000)">Agregar al carrito</button>
+                <h2>Nvidia 2070 Super</h2>
+            </div>
+            <!--Producto 8-->
+            <div class="producto" onclick="mostrarOcultar('descripcion8', 'comprar8', 'agregar8')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 8">
+                <p class="descripcion" id="descripcion8" style="display: none">Precio: $500.000</p>
+                <button class="comprar" id="comprar8" style="display: none"
+                    onclick="comprarProducto('producto8')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar8" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2080', 500000)">Agregar al carrito</button>
+                <h2>Nvidia 2080</h2>
+            </div>
+            <!--Producto 9-->
+            <div class="producto" onclick="mostrarOcultar('descripcion9', 'comprar9', 'agregar9')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 9">
+                <p class="descripcion" id="descripcion9" style="display: none">Precio: $550.000</p>
+                <button class="comprar" id="comprar9" style="display: none"
+                    onclick="comprarProducto('producto9')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar9" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2080 super', 550000)">Agregar al carrito</button>
+                <h2>Nvidia 2080 Super</h2>
+            </div>
+            <!--Producto 10-->
+            <div class="producto" onclick="mostrarOcultar('descripcion10', 'comprar10', 'agregar10')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 10">
+                <p class="descripcion" id="descripcion10" style="display: none">Precio: $600.000</p>
+                <button class="comprar" id="comprar10" style="display: none"
+                    onclick="comprarProducto('producto10')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar10" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2090', 600000)">Agregar al carrito</button>
+                <h2>Nvidia 2090</h2>
+            </div>
+            <!--Producto 11-->
+            <div class="producto" onclick="mostrarOcultar('descripcion11', 'comprar11', 'agregar11')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 11">
+                <p class="descripcion" id="descripcion11" style="display: none">Precio: $650.000</p>
+                <button class="comprar" id="comprar11" style="display: none"
+                    onclick="comprarProducto('producto11')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar11" style="display: none"
+                    onclick="agregarAlCarrito('Nvidia 2090 super', 650000)">Agregar al carrito</button>
+                <h2>Nvidia 2090 Super</h2>
+            </div>
+            <!--Producto 12-->
+            <div class="producto" onclick="mostrarOcultar('descripcion12', 'comprar12', 'agregar12')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 12">
+                <p class="descripcion" id="descripcion12" style="display: none">Precio: $470.000</p>
+                <button class="comprar" id="comprar12" style="display: none"
+                    onclick="comprarProducto('producto12')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar12" style="display: none"
+                    onclick="agregarAlCarrito('producto12', 470000)">Agregar al carrito</button>
+                <h2>Nvidia 3050</h2>
+            </div>
+            <!--Producto 13-->
+            <div class="producto" onclick="mostrarOcultar('descripcion13', 'comprar13', 'agregar13')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 13">
+                <p class="descripcion" id="descripcion13" style="display: none">Precio: $520.000</p>
+                <button class="comprar" id="comprar13" style="display: none"
+                    onclick="comprarProducto('producto13')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar13" style="display: none"
+                    onclick="agregarAlCarrito('producto13',520000)">Agregar al carrito</button>
+                <h2>Nvidia 3060</h2>
+            </div>
+            <!--Producto 14-->
+            <div class="producto" onclick="mostrarOcultar('descripcion14', 'comprar14', 'agregar14')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 14">
+                <p class="descripcion" id="descripcion14" style="display: none">Precio: $630.000</p>
+                <button class="comprar" id="comprar14" style="display: none"
+                    onclick="comprarProducto('producto14')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar14" style="display: none"
+                    onclick="agregarAlCarrito('producto14', 630000)">Agregar al carrito</button>
+                <h2>Nvidia 3060 Super</h2>
+            </div>
+            <!--Producto 15-->
+            <div class="producto" onclick="mostrarOcultar('descripcion15', 'comprar15', 'agregar15')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 15">
+                <p class="descripcion" id="descripcion15" style="display: none">Precio: $700.000</p>
+                <button class="comprar" id="comprar15" style="display: none"
+                    onclick="comprarProducto('producto15')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar15" style="display: none"
+                    onclick="agregarAlCarrito('producto15', 700000)">Agregar al carrito</button>
+                <h2>Nvidia 3070</h2>
+            </div>
+            <!--Producto 16-->
+            <div class="producto" onclick="mostrarOcultar('descripcion16', 'comprar16', 'agregar16')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 16">
+                <p class="descripcion" id="descripcion16" style="display: none">Precio: $780.000</p>
+                <button class="comprar" id="comprar16" style="display: none"
+                    onclick="comprarProducto('producto16')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar16" style="display: none"
+                    onclick="agregarAlCarrito('producto16', 780000)">Agregar al carrito</button>
+                <h2>Nvidia 3080</h2>
+            </div>
+            <!--Producto 17-->
+            <div class="producto" onclick="mostrarOcultar('descripcion17', 'comprar17', 'agregar17')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 17">
+                <p class="descripcion" id="descripcion17" style="display: none">Precio: $850.000</p>
+                <button class="comprar" id="comprar17" style="display: none"
+                    onclick="comprarProducto('producto17')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar17" style="display: none"
+                    onclick="agregarAlCarrito('producto17', 850000)">Agregar al carrito</button>
+                <h2>Nvidia 3090</h2>
+            </div>
+            <!--Producto 18-->
+            <div class="producto" onclick="mostrarOcultar('descripcion18', 'comprar18', 'agregar18')">
+                <img src="../imagenes/img placas de video/1660.png" alt="Producto 18">
+                <p class="descripcion" id="descripcion18" style="display: none">Precio: $1.200.000</p>
+                <button class="comprar" id="comprar18" style="display: none"
+                    onclick="comprarProducto('producto18')">Comprar</button>
+                <button class="agregar-al-carrito" id="agregar18" style="display: none"
+                    onclick="agregarAlCarrito('producto18', 1200000)">Agregar al carrito</button>
+                <h2>Nvidia 4090</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Electro Componentes</p>
+
+<div id="modal" class="modal">
+    <div class="modal-contenido">
+        <!-- Título del modal -->
+        <h2>Ingresa los datos de tu tarjeta</h2>
+        
+        <!-- Campo para ingresar el nombre del titular de la tarjeta -->
+        <label for="nombre-titular">Nombre del Titular:</label>
+        <input type="text" id="nombre-titular" placeholder="Nombre del titular" required>
+        
+        <!-- Campo para ingresar el número de tarjeta de crédito -->
+        <label for="numero-tarjeta">Número de Tarjeta:</label>
+        <input type="text" id="numero-tarjeta" placeholder="Número de tarjeta" required>
+        
+        <!-- Campo para ingresar la fecha de vencimiento -->
+        <label for="fecha-vencimiento">Fecha de Vencimiento:</label>
+        <input type="text" id="fecha-vencimiento" placeholder="MM/AA" required>
+        
+        <!-- Campo para ingresar el código de seguridad (CVV) -->
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="CVV" required>
+        
+        <!-- Botón para confirmar la compra -->
+        <button id="confirmar-compra-btn">Confirmar Compra</button>
+        
+        <!-- Botón para cancelar la compra -->
+        <button id="cerrar-modal-btn">Cancelar</button>
+    </div>
+</div>
+
+    </footer>
+
+
+</body>
+
+</html>
